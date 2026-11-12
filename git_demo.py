@@ -1,6 +1,7 @@
 def greet(name):
     print("Hello", name)
+    print("Welcome to GitHub!")
 
-
-print("This is a demo for git.")
 greet("Harini")
+
+print("Latest changes made to the code.")
