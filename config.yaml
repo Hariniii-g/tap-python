@@ -1,14 +1,10 @@
-paths:
-  orders: "olist_mini/orders.csv"
-
-thresholds:
-  max_rejected_fraction: 0.20
-
-mappings:
-  order_status: "status"
-
-input_file: "olist_mini/orders.csv"
-clean_csv: "cleaned_orders.csv"
-clean_json: "cleaned_orders.json"
-manifest: "manifest.json"
-max_rejected_fraction: 0.20
+column_mapping:
+  olist_mini/orders.csv:
+    order_id: order_id
+    customer_id: customer_id
+    order_status: order_status
+    order_purchase_timestamp: order_purchase_timestamp
+    order_approved_at: order_approved_at
+    order_delivered_carrier_date: order_delivered_carrier_date
+    order_delivered_customer_date: order_delivered_customer_date
+    order_estimated_delivery_date: order_estimated_delivery_date
